@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9 to 11, task 11</title>
+</head>
+
+<body>
+
+    <script>
+        //11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+        //a. First number
+        //b. Second number
+        //c. Operation (+, -, *, /, %) 
+        //Compute & show the calculated result to user
+
+        var num1 = +(prompt("Enter First Number"));
+        var num2 = +(prompt("Enter Second Number"));
+        var op = prompt("Choose your operation\n(+, -, *, /, %)");
+        var result;
+        if (op === "+") {
+            result = num1 + num2;
+            document.write("Result is: " + result);
+        } else if (op === "-") {
+            result = num1 - num2;
+            document.write("Result is: " + result);
+        } else if (op === "*") {
+            result = num1 * num2;
+            document.write("Result is: " + result);
+        } else if (op === "/") {
+            result = num1 / num2;
+            document.write("Result is: " + result);
+        } else if (op === "%") {
+            result = num1 % num2;
+            document.write("Result is: " + result);
+        } else {
+            alert("Invalid Operator");
+        }
+    </script>
+
+    
+
+</body>
+
+</html>
